@@ -1,7 +1,7 @@
 # Programme 01
 
-Cette partie est en deux sous-points présente une scène 3D simple.
-L'objectif étant de vous familiariser avec la création de primitives géométriques en _THREE.js_.
+Cette partie en deux sous-points présente une scène 3D simple.
+L'objectif est de vous familiariser avec la création de primitives géométriques en _THREE.js_.
 
 * Partie a : Présentation d'un cube dans une scène
 * Partie b : Introduction aux autres primitives
