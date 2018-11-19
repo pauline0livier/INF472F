@@ -7,11 +7,11 @@ Les objets graphiques affichés par Three.js sont généralement des maillages t
   1. Une apparence ([material](https://threejs.org/docs/#api/materials/Material)). Dans notre cas, il s'agira généralement de la couleur de l'objet. Plus généralement les "matériaux" peuvent aussi contenir des textures et avoir une apparence variable en fonction de la position de la lumière et de la caméra pour donner l'impression d'être brillant, mat, réfléchissants, etc.
 
 THREE.js comprend les géométries des primitives de base :
-* cube/pavé droit : THREE.BoxGeometry( longueur,largeur,hauteur) [THREE.BoxGeometry](https://threejs.org/docs/#api/en/geometries/BoxGeometry)
-* plan : THREE.PlaneGeometry(largeur, hauteur)[THREE.PlaneGeometry](https://threejs.org/docs/#api/en/geometries/PlaneGeometry)
-* cylindre : THREE.CylinderGeometry( rayon sphere du haut , rayon sphere du bas,hauteur,segments radiaux ) [THREE.Cylinder](https://threejs.org/docs/#api/en/geometries/CylinderGeometry)
-* sphere : THREE.SphereGeometry( rayon, segmentsLargeur,segmentsHauteur ) [THREE.Sphere](https://threejs.org/docs/#api/en/geometries/SphereGeometry)
-* cône : THREE.ConeGeometry(rayon, hauteur, segments radiaux, segmentsHauteur) [THREE.ConeGeometry](https://threejs.org/docs/#api/en/geometries/ConeGeometry)
+* cube/pavé droit : [THREE.BoxGeometry](https://threejs.org/docs/#api/en/geometries/BoxGeometry) ( longueur,largeur,hauteur)
+* plan : [THREE.PlaneGeometry](https://threejs.org/docs/#api/en/geometries/PlaneGeometry) (largeur, hauteur)
+* cylindre : [THREE.Cylinder](https://threejs.org/docs/#api/en/geometries/CylinderGeometry) (rayon sphere du haut, rayon sphere du bas,hauteur,segments radiaux )
+* sphere (entière, demi-sphère..) : [THREE.Sphere](https://threejs.org/docs/#api/en/geometries/SphereGeometry)(rayon, segmentsLargeur,segmentsHauteur, phiStart, phiLength, thetaStart, thetaLength)
+* cône : [THREE.ConeGeometry](https://threejs.org/docs/#api/en/geometries/ConeGeometry)(rayon, hauteur, segments radiaux, segmentsHauteur)
 
 ```JavaScript
 // Initialisation d'un objet 3D:
@@ -22,17 +22,14 @@ cubeObject.position.set(0,0.5,0); // Positionnement de l'objet dans l'espace (pa
 sceneGraph.add(cubeObject); // Ajout de l'objet dans le graphe de scène.
 
 ```
-__Q.__ Ajoutez un plan à la Scène.
+__Q.___ Placer un cône, un cylindre et une sphère dans la Scène.
 
-#Indication
-Pour tourner le plan selon un axe : planeGeometry.rotateX(angle) ou planeGeometry.rotateY(angle) ou planeGeometry.rotateZ(angle);
-Plus d'informations sur les transformations en séance 2/partie 00
+![Résultat visuel](pictures/resultat.png)
 
 
-__Q.___ Placer un cône, un cylindre et une sphère sur ce plan.
+__Question Additionnelle__ Créer un château basique en utilisant un pavé droit, 4 cylindres et 4 cônes.
 
-
-__Question Additionnelle__ Créer un château basique sur ce plan en utilisant un pavé droit, 4 cylindres et 4 cônes.
+![Résultat visuel](pictures/resultatChateau.png)
 
 ### Changement d'apparence
 A la création d'un objet une apparence est initialisée.
