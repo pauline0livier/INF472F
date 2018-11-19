@@ -7,7 +7,7 @@ Cette partie présente une scène plus complète possédant:
 
 ![Resultat](pictures/resultat.png)
 
-[_Scène obtenue_](https://htmlpreview.github.io/?https://github.com/pauline0livier/INF472F/seance_01/partie_05_scene_complete/b_utilisation_module/src/index.html)
+[_Scène obtenue_](https://htmlpreview.github.io/?https://github.com/pauline0livier/INF472F/blob/master/seance_01/partie_05_scene_complete/b_utilisation_module/src/index.html)
 
 Le code de cette scène est présenté suivant deux versions.
 * a: En initialisant directement chaque objet à partir des appels de l'API Three.js
