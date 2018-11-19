@@ -5,12 +5,25 @@ Ce premier programme présente une page web minimaliste afin de se familiariser 
 ### Ouverture de la page web dans le navigateur
 
 Chaque élément est déclarée entre balises qui peuvent être du type
-* titre (<h1> titre1 </h1>, ...<hi> titrei </hi>)
-* commentaire (<!-- Mon commentaire -->)
-* paragraphe de texte (<p> Mon paragraphe </p>)
-...
+* Titre :
+```javascript
+<h1> Mon titre </h1>
+<h2> Titre secondaire </h2>
+```
+<h1> Mon titre </h1>
+<h2> Titre secondaire </h2>
 
-Un élément peut être identifié par un identifiant (id ="monId") unique afin de le distinguer des autres éléments dans le fichier CSS ou Javascript.
+* Commentaire :
+```javascript
+<!-- Mon commentaire -->
+```
+* Paragraphe de texte :
+```javascript
+<p> Mon paragraphe </p>
+```
+<p> Mon paragraphe </p>
+
+Un élément peut être identifié par un identifiant unique (id ="monId") afin de le distinguer des autres éléments dans les fichiers externes (CSS, Javascript).
 
 __Q.__ Ouvrez le fichier index.html (présent dans src/index.html) en utilisant un navigateur récent. On pourra utiliser par exemple Firefox, Google Chrome/Chromium.
 
