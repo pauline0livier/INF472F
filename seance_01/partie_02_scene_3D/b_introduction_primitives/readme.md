@@ -38,7 +38,7 @@ A la création d'un objet une apparence est initialisée.
 
  Exemples de quelques attributs d'apparence :
 * color : couleur de l'objet
-* transparent : true (opacity:0,5): transparence de l'objet
+* transparent : true (opacity:0,5) transparence de l'objet
 * wireframe: true (affichage des faces de l'objet)
 
 Cette apparence peut évoluer pendant le programme.
