@@ -26,5 +26,4 @@ _Aide:_ on pourra réaliser le déplacement de la sphère par translation. Pour 
 
 __Question additionnelle__ Utiliser maintenant les flèches du clavier pour gérer la translation de la sphère 
 
-#### Indication #### 
-Identifiez les keycodes associé aux flèches du clavier 
+Indication : Identifiez les keycodes associé aux flèches du clavier 
