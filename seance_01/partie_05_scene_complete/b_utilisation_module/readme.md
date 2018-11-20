@@ -39,6 +39,3 @@ Retrouvez l'organisation hiérarchique en affichant à la console la variable _s
 
 Rem. Three.js gère les éléments affichés comme un arbre. Chaque élément possède son repère propre. En ajoutant un élément à un autre existant, il hérite du repère du parent. Cette approche permet une gestion aisée d'organisation ou de mouvements hiérarchiques.
 
-__Question additionnelle__ Créez un objet complexe composé d'éléments réliés par hierarchie. Ajoutez au moins 1 rotation et une translation pour mettre en évidence cette hierarchie de mouvements.
-
-Exemple: moulin qui roule
