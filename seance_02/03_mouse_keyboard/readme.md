@@ -23,3 +23,8 @@ __Q.__ Modifiez le code de manière à pouvoir gérer la translation de la sphè
 _Aide:_ on pourra réaliser le déplacement de la sphère par translation. Pour cela, on peut mettre en mémoire la position (x,y) de la souris à l'instant précédent (MAJ à chaque déplacement de la souris). La différence entre la position actuelle et la position précédente donne alors le vecteur de déplacement à appliquer sur la sphère.
 
 ![Result](pictures/result.gif)
+
+__Question additionnelle__ Utiliser maintenant les flèches du clavier pour gérer la translation de la sphère 
+
+#### Indication #### 
+Identifiez les keycodes associé aux flèches du clavier 
