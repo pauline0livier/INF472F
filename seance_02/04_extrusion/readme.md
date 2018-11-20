@@ -10,4 +10,4 @@ Les deux codes suivants proposent
 
 Notez que les formes définies par des contours planaires et d'épaisseurs faibles peuvent être physiquement réalisées par découpage laser dans du bois (le contour doit être sauvegardé au format svg), ce qui est plus simple et rapide à mettre en oeuvre qu'une impression 3D.
 
-En complément, *c présente une autre manière de réalisée des extrusions en faisant circuler un volume le long d'un chemin
+En complément, *c présente une autre manière de réalisée des extrusions en faisant circuler un polygone 2D le long d'un chemin
