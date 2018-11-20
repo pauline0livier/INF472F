@@ -38,7 +38,7 @@ sceneGraph.add(object);
 //  Fonctions de rappels évènementielles
 // ****************************** //
 
-// Bouton de la souris enclanché
+// Bouton de la souris enclenché
 window.addEventListener('mousedown', onMouseDown);
 
 // Bouton de la souris relaché
