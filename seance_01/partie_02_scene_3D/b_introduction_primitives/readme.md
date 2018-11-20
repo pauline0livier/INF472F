@@ -13,6 +13,8 @@ THREE.js comprend les géométries des primitives de base :
 * sphere (entière, demi-sphère..) : [THREE.Sphere](https://threejs.org/docs/#api/en/geometries/SphereGeometry)(rayon, segmentsLargeur,segmentsHauteur, phiStart, phiLength, thetaStart, thetaLength)
 * cône : [THREE.ConeGeometry](https://threejs.org/docs/#api/en/geometries/ConeGeometry)(rayon, hauteur, segments radiaux, segmentsHauteur)
 
+et bien d'autres
+
 ```JavaScript
 // Initialisation d'un objet 3D:
 const cubeGeometry = new THREE.BoxGeometry( 1,1,1 ); // Primitive cubique de taille 1x1x1 centrée en (0,0,0)
