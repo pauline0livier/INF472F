@@ -45,6 +45,8 @@ requestAnimationFrame( computeFrame );
 
 function computeFrame( time ) {
 
+    const t = time/1000;
+    
     // actions à effectuer
 
     // Render the scene
