@@ -4,11 +4,11 @@
 * un appel de la fonction render() à chaque besoin de mettre à jour l'affichage
 * une boucle d'animation appelée en continu et l'affichage est mis à jour tous les dt (~25ms)
 
-** Appel à la fonction render()
+## Appel à la fonction render()
 + mise à jour de l'écran que si besoin
 - besoin de rajouter l'appel à la fonction dès qu'on modifie la scène (le plus souvent après un événement)
 
-** Boucle d'animation
+## Boucle d'animation
 
 ```javascript
 
