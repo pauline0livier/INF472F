@@ -39,5 +39,5 @@ Ajout de l'attribut "linewidth:valeur" à l'apparence de la polyligne
 ### Explications des différents éléments de l'ensemble drawingData
 * drawingObjects : liste contenant tous les éléments servant de support au dessin 
 * selectedObject : support sélectionné pour le dessin 
-* line : ligne créé par le dessin 
+* line : ligne créée par le dessin 
 * drawing3DPoints : liste contenant les coordonnées des points 3D récupérés lors du lancer de rayon
