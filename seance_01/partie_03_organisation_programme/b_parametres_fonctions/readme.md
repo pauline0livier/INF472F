@@ -22,9 +22,9 @@ __Q.__ Observez le code et assurez vous de bien comprendre la création de l'obj
 
 
 
-__Remarque générale___ Bien que les paramètres globaux sont à éviter pour les codes finaux conséquents, ils peuvent cependant posséder certains avantages:
-* Permet le prototypage rapide lorsque l'on souhaite utiliser des valeurs à différents endroits.
-* Peut simplifier le code, en particulier, lors de l'utilisation de fonctions dites de _callback_ que nous verrons plus tard.
+__Remarque générale__ Bien que les paramètres globaux sont à éviter pour les codes finaux conséquents, ils peuvent cependant posséder certains avantages:
+* Permettre le prototypage rapide lorsque l'on souhaite utiliser des valeurs à différents endroits.
+* Pouvoir simplifier le code, en particulier, lors de l'utilisation de fonctions dites de _callback_ que nous verrons plus tard.
 
 => Votre objectif premier n'est pas le design du code, mais la création de votre modeleur et de ses fonctionnalités. Un compromis peut donc être choisi entre utilisation de variables globales et simplicité du code.
 En pratique, il vous est suggéré de satisfaire le plus possible aux bonnes pratiques, vous êtes cependant libre d'utiliser à bon escient les outils proposés ou non. En particulier, vous pourrez garder l'utilisation de variables globales dans votre projet si cela vous permet de simplifier votre code.
