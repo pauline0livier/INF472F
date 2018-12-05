@@ -15,16 +15,18 @@ Une approche de lancer de rayons permet de déterminer l’intersection d’un o
 
 On appelle polyligne, une ligne continue composée d’un ou plusieurs segments.
 
-```javascript
 Initialisation : polyLigne = null;
 
 Du début à la fin du geste de tracé de l’utilisateur,
 
-  * (xSouris, ySouris) = coordonnées de la souris sur l'écran
-  * Création d'un rayon qui passe par la caméra et se projette en (xSouris, ySouris) sur le plan image de l'écran
-  * Utilisation de ce rayon pour déterminer le point Pi (x,y,z), intersection du rayon et du premier objet intersecté
-  * Ajout de Pi dans la polyligne + affichage mise à jour de la polyligne
-```
+   * (xSouris, ySouris) = coordonnées de la souris sur l'écran
+   
+   * Création d'un rayon qui passe par la caméra et se projette en (xSouris, ySouris) sur le plan image de l'écran 
+   
+   * Utilisation de ce rayon pour déterminer le point Pi (x,y,z), intersection du rayon et du premier objet intersecté 
+   
+   * Ajout de Pi dans la polyligne + affichage mise à jour de la polyligne
+
 
 De fait, le tracé de l’utilisateur n’est pas modifié par le système.
 
