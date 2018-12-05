@@ -18,7 +18,7 @@ Soit P le plan passant par le point 3D sélectionné p, et de normale n. Soit R 
 __Q.__ Donnez l'expression de la valeur tI en fonction de p, p0, n, et d. En déduire la valeur de pI et la translation à appliquer à p0.
 
 __Q.__ Retrouvez ces différentes informations dans le code (fonction _onMouseMove_).
-On notera l'utilisation de la fonction _unproject_ permettant de réaliser la projection inverse d'un point 2D de l'écran vers l'espace 3D (à un degré de liberté prêt en termes de profondeur).
+On notera l'utilisation de la fonction _unproject_ permettant de réaliser la projection inverse d'un point 2D de l'écran vers l'espace 3D (à un degré de liberté près en termes de profondeur).
 
 __Q.__ Modifiez le code de manière à gérer la collision en empêchant l'objet de sortir du cube unité [0,1]x[0,1][0,1].
 
