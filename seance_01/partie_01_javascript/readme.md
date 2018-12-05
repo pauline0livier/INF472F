@@ -4,7 +4,7 @@ Ce premier programme présente une page web minimaliste afin de se familiariser 
 
 ### Ouverture de la page web dans le navigateur
 
-Chaque élément est déclarée entre balises qui peuvent être du type
+Chaque élément est déclaré entre balises qui peuvent être du type
 * Titre :
 ```javascript
 <h1> Mon titre </h1>
@@ -49,7 +49,7 @@ Remarque : La commande _document.querySelector("#monId")_ permet de récupérer 
 
 __Q.__ Ouvrez le fichier _script.js_ avec votre éditeur de texte. Il s'agit cette fois d'un code JavaScript qui effectue de nombreux affichages sur une console. Cette console est généralement masquée lors de l'utilisation standard du navigateur et il est nécessaire de lancer le mode "développeur" pour le voir.
 * Ouvrez le mode "développeur" ou "debug" de votre navigateur. Généralement la touche F12 permet d'activer ce mode.
-* Selectionner l'onglet "Console" de votre navigateur et observez l'affichage des différentes informations obtenues lors de l'exécution du code JavaScript.
+* Selectionnez l'onglet "Console" de votre navigateur et observez l'affichage des différentes informations obtenues lors de l'exécution du code JavaScript.
 
 ![telechargement](pics/developer_mode.png)
 _(exemple de console en "mode développeur" sous Chromium)_
@@ -64,8 +64,8 @@ N'hésitez pas à tester différentes valeurs et nous appeler en cas de question
 ### Remarques techniques de __bonnes pratiques__ en programmation Web:
 
 * Le code qui vous est fourni en exemple comporte plusieurs fichiers séparant le contenu de la page html (index.html), l'apparence des éléments html (style.css), et le code d'automatisation (script.js).
-Vous pourrez fréquemment trouver sur internet des codes intégrant dans un seul et même fichier html à la fois les balises css et le code JavaScript. Il n'est donc pas nécessaire de passer forcément par des fichiers différents. Cependant, cela permet de séparer les parties indépendantes du code, facilite leur lecture, et les rend potentiellement réutilisables.
-Il vous est donc conseillé de décrire votre application web en utilisant différents fichiers indépendants, et de garder au minimum la structure HTML, CSS, JavaScript séparés.
+Vous pourrez fréquemment trouver sur internet des codes intégrant dans un seul et même fichier html à la fois les balises css et le code JavaScript. Il n'est donc pas nécessaire de passer forcément par des fichiers différents. Cependant, cela permet de séparer les parties indépendantes du code, faciliter leur lecture, et les rend potentiellement réutilisables.
+Il vous est donc conseillé de décrire votre application web en utilisant différents fichiers indépendants, et de garder au minimum la structure des fichiers HTML, CSS, JavaScript séparés.
 
 * Le fichier JavaScript débute par la commande
 ```javascript
@@ -93,7 +93,7 @@ console.log(a); // Code non valide: a n'existe plus
 // après la fin de l'accolade.
 ```
 Il est généralement préférable d'avoir les portées de variables locales afin d'éviter des redéfinitions involontaires. Cela facilite également la lecture et la compréhension du code.
-> De manière générale, ont suivra donc la règle dans l'ordre de priorité suivant:<br/>
+> De manière générale, on suivra donc la règle dans l'ordre de priorité suivant:<br/>
 1- On déclarera par défaut les variables en tant que _const_. <br/>
 2- Si la variable a besoin d'être réaffectée, alors on la déclarera en tant que _let_. <br/>
 3- Si, dans un cas particulier (généralement rare), une variable nécessite une portée plus large que le bloc courant et ne nuit pas à la lisibilité du code, alors on pourra la déclarer en tant que _var_.
