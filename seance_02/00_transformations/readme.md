@@ -4,13 +4,13 @@ Cette partie présente le modèle de transformations de Three.js et différentes
 
 ## Coordonnées et matrices de transformations
 
-Le position et l'orientation de vos objet peut se réaliser suivant deux approches
+Le position et l'orientation de vos objet peuvent se réaliser suivant deux approches
 1. Par le choix de ces coordonnées définies dans la classe [Geometry](https://threejs.org/docs/#api/core/Geometry).
 1. Par la mise en place de la matrice de transformation, donnée stockée dans les objets de type [Object3D](https://threejs.org/docs/#api/core/Object3D) qui est la classe parente des [Mesh](https://threejs.org/docs/#api/objects/Mesh).
 
 
-* En pratique, modifier les coordonnées de la géométrie de l'objet est une opération couteuse: il faut parcourir l'ensemble des sommets par du code JavaScript et les modifier.
-A l'inverse, utiliser la matrice de transformation est une opération rapide. Cette matrice est passée en paramètre à la carte graphique, et l'application de cette matrice sur les coordonnées des sommets est réalisé en parallèle sur la carte graphique.
+* En pratique, modifier les coordonnées de la géométrie de l'objet est une opération coûteuse: il faut parcourir l'ensemble des sommets par du code JavaScript et les modifier.
+A l'inverse, utiliser la matrice de transformation est une opération rapide. Cette matrice est passée en paramètre à la carte graphique et l'application de cette matrice sur les coordonnées des sommets est réalisé en parallèle sur la carte graphique.
 * La matrice de transformation gère le positionnement et l'orientation hierarchiques des éléments dans le graphe de scène de Three.js. Au moment de l'affichage, le graphe de scène est parcouru et la matrice de la classe parente est multipliée à la matrice de la classe fille de manière hiérarchique.
 
 On notera donc les deux points suivants
@@ -86,11 +86,11 @@ _Application d'une rotation autour d'un pivot spécifique en trois étapes._
 
 _Rem_. Cette transformation est similaire à l'application d'une unique transformation telle que la rotation soit donnée par R, et la translation soit donnée par c - R c.
 
-En 3D cette approche fonctionne de la même manière. Il n'y a pas à proprement parler de _centre de rotation_, mais il s'agit cette fois d'un axe de rotation. Il faut alors appliquer une translation telle que l'axe de cette rotation passe par l'origine.
+En 3D, cette approche fonctionne de la même manière. Il n'y a pas à proprement parler de _centre de rotation_, mais il s'agit cette fois d'un axe de rotation. Il faut alors appliquer une translation telle que l'axe de cette rotation passe par l'origine.
 
 ## Cas d'exemple
 
-Considérons le cas d'application [visible ici](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/b_application_transformations/index.html). Un objet est composé de deux cylindres (vert et rouge). Le cylindre rouge est attaché au cylindre vert, et est modélisé comme un enfant du cylindre vert dans le graphe de scène.
+Considérons le cas d'application [visible ici](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/b_application_transformations/index.html). Un objet est composé de deux cylindres (vert et rouge). Le cylindre rouge est attaché au cylindre vert et est modélisé comme un enfant du cylindre vert dans le graphe de scène.
 
 On considère qu'à l'instant initial, on a
 * l'axe du cylindre vert défini entre les points c1=(1,1,1) et c2=(1,3,1),
@@ -105,7 +105,7 @@ Au niveau de l'animation,
 
 _Positions annotées du cas d'application._
 
-On propose ci après différentes solutions pour réaliser cette scène. Notez qu'en fonction du contexte l'une ou l'autre solution peut se révéler plus ou moins adaptée.
+On propose ci-après différentes solutions pour réaliser cette scène. Notez qu'en fonction du contexte l'une ou l'autre solution peut se révéler plus ou moins adaptée.
 
 
 ### Placer l'objet initialement dans un repère centré pour la rotation.
@@ -135,7 +135,7 @@ cylinderSon.position.set(0,2,0);
 
 [Voir résultat correspondant.](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/a_centrage_initial/index.html)
 
-Cette approche permet d'avoir une transformation simple, mais nécessite un travail préalable de centrage de l'objet par rapport à son axe de rotation. Cette approche ne fonctionne que si il existe un point fixe autour duquel l'objet pivote, constant au cours du temps dans le repère où l'objet est défini (son parent dans la hiérarchie).
+Cette approche permet d'avoir une transformation simple, mais nécessite un travail préalable de centrage de l'objet par rapport à son axe de rotation. Cette approche ne fonctionne que s'il existe un point fixe autour duquel l'objet pivote, constant au cours du temps dans le repère où l'objet est défini (son parent dans la hiérarchie).
 
 
 ### Application de transformations successives
@@ -208,7 +208,7 @@ cylinderSon.translateX(-1).translateY(-3).translateZ(-1);
 
 ### Utilisation des matrices
 
-Une dernière possibilité consiste à gérer soit même les transformations sous forme de matrices.
+Une dernière possibilité consiste à gérer soi-même les transformations sous forme de matrices.
 Dans ce cas, la syntaxe est potentiellement plus longue que par l'utilisation des fonctions `translate` et `rotate` de Three.js. Par contre, l'ordre des opérations est gérée explicitement, et il n'est plus nécessaire d'inverser l'ordre des opérations dans le code.
 
 (code correspondant dans le répertoire `d_matrices/`):
