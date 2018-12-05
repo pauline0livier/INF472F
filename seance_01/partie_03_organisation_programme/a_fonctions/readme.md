@@ -9,7 +9,7 @@ function nomFonction( [Paramètres] ) {
 }
 ```
 
-Les paramètres d'entrés sont donnés par leurs identifiants: leurs types étant déterminés automatiquement et s'adaptent dynamiquement. Idem pour le paramètre optionnel de retour qui suit l'appel à "return".
+Les paramètres d'entrées sont donnés par leurs identifiants: leurs types étant déterminés automatiquement et s'adaptent dynamiquement. Idem pour le paramètre optionnel de retour qui suit l'appel à "return".
 
 Les fonctions peuvent être déclarées après leur utilisation, on parle de "[function hoisting](https://www.w3schools.com/js/js_function_definition.asp)" (les déclarations sont déplacées en haut de leur bloc de portée par l'interpréteur).
 
