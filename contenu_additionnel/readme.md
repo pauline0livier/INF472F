@@ -5,3 +5,7 @@ Ce dossier est un complément aux séances de TP dans le but d'apporter des modu
 ## Dessin
 
 Cette partie permet de pouvoir dessiner sur des surfaces ou volumes en temps réel.
+
+## Fiches Résumé 
+
+Cette partie reprend quelques notions importantes des séances de TP 
