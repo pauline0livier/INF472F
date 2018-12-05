@@ -16,6 +16,7 @@ Une approche de lancer de rayons permet de déterminer l’intersection d’un o
 On appelle polyligne, une ligne continue composée d’un ou plusieurs segments.
 
 Initialisation : polyLigne = null;
+
 Du début à la fin du geste de tracé de l’utilisateur,
 
   * (xSouris, ySouris) = coordonnées enregistrés par la souris
