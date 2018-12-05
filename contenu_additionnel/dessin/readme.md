@@ -20,9 +20,9 @@ Initialisation : polyLigne = null;
 
 Du début à la fin du geste de tracé de l’utilisateur,
 
-  * (xSouris, ySouris) = coordonnées enregistrés par la souris
+  * (xSouris, ySouris) = coordonnées de la souris sur l'écran
   * Création d'un rayon qui passe par la caméra et se projette en (xSouris, ySouris) sur le plan image de l'écran
-  * Utilisation de ce rayon pour déterminer le point 3D Pi, intersection du rayon et du premier objet intersecté
+  * Utilisation de ce rayon pour déterminer le point Pi (x,y,z), intersection du rayon et du premier objet intersecté
   * Ajout de Pi dans la polyligne + affichage mise à jour de la polyligne
 ```
 
