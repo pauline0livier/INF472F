@@ -28,15 +28,31 @@ function animate(time) {
     //temps en seconde
     const t = time/1000;
 
-    // Animation de l'objet ayant le nom "box"
-    const box = sceneThreeJs.sceneGraph.getObjectByName("box");
-    box.position.set(Math.sin(3*t), 0, 0);
+    // actions à effectuer
 
     // Affichage de la scène
     render();
 
     // Relance la boucle d'animation
     animationLoop();
+}
+```
+ou 
+
+``` javascript 
+requestAnimationFrame( computeFrame );
+
+
+function computeFrame( time ) {
+
+    // actions à effectuer
+
+    // Render the scene
+    render();
+
+    // Call for the next frame
+    requestAnimationFrame( computeFrame );
+
 }
 ```
 
