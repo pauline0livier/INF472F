@@ -21,7 +21,7 @@ Du début à la fin du geste de tracé de l’utilisateur,
 
   * (xSouris, ySouris) = coordonnées enregistrés par la souris
   * Création d'un rayon qui passe par la caméra et se projette en (xSouris, ySouris) sur le plan image de l'écran
-  * Utilisation de ce rayon pour déterminer le point 3D (Pi) qui intersection du rayon et du premier objet intersecté
+  * Utilisation de ce rayon pour déterminer le point 3D Pi, intersection du rayon et du premier objet intersecté
   * Ajout de Pi dans la polyligne + affichage mise à jour de la polyligne
 
 De fait, le tracé de l’utilisateur n’est pas modifié par le système.
