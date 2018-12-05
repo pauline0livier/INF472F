@@ -8,7 +8,7 @@ Ce programme présente l'application de textures sur une surface. À titre d'inf
 
 Les coordonnées de textures sont généralement calculées automatiquement lors de la création de primitives par Three.js, mais peuvent être adaptées au besoin.
 
-Dans le cas du code suivant, on utilise les coordonnées de textures fournies par défaut lors de la création des primitives de Three.js
+Dans le cas du code suivant, on utilise les coordonnées de textures fournies par défaut lors de la création des primitives de Three.js.
 Nous devons cependant charger les images qui sont placées dans le répertoire _pictures/_
 Three.js propose un chargeur d'image par le biais d'un objet  [TextureLoader](https://threejs.org/docs/#api/loaders/TextureLoader).
 
@@ -36,14 +36,14 @@ Le serveur répond avec le contenu de la page (typiquement une page HTML, CSS, o
 Le client analyse ensuite le code, et lorsqu'il rencontre une ressource externe non présente (typiquement une image, un autre fichier de code, etc) il émet de nouvelles requêtes au serveur afin d'obtenir ces fichiers manquants (typiquement suivant le protocole HTTP, ou encore FTP).
 
 
-L'une des solutions permettant de lire un fichier sur votre disque depuis du code JavaSciprt consiste à placer votre code sur un serveur web, qui va alors pouvoir "servir" les fichiers demandés par votre client (c-a-d votre navigateur) sous le protocole HTTP.
+L'une des solutions permettant de lire un fichier sur votre disque depuis du code JavaScript consiste à placer votre code sur un serveur web, qui va alors pouvoir "servir" les fichiers demandés par votre client (c-a-d votre navigateur) sous le protocole HTTP.
 Il n'est cependant pas nécessaire de placer votre code en ligne sur un serveur externe, différents programmes permettent de lancer de simples serveurs locaux sur votre propre machine.
 
 ### Serveur local
 
 _SimpleHTTPServer_ est un code python permettant de lancer un tel serveur.
 
-* Assurez vous tout d'abord que l'interpréteur Python soit installé sur votre machine. Pour cela, vous pouvez tapper en ligne de commande:
+* Assurez vous tout d'abord que l'interpréteur Python soit installé sur votre machine. Pour cela, vous pouvez taper en ligne de commande:
 ```
 python -V
 ```
@@ -97,4 +97,4 @@ Vous devriez voir désormais la scène avec les textures.
 Notez que _textureLoader.load_ fonctionne en parallèle du reste du code de manière asynchrone. Il s'agit d'un comportement qui évite au navigateur de bloquer lors du chargement de ressources externes.
 Cela signifie par contre que les lignes suivantes vont potentiellement s'executer avant que l'image n'ait le temps d'être chargé (comportement non déterministe). Dans le cas présent cela peut impliquer que la scène puisse être affichée noire quelques secondes avant que la texture n'apparaisse. Si la transmission entre le serveur et le client est lente, ce phénomène sera accentué.
 
-Dans certains cas, il sera nécessaire de gérer spécifiquement le temps d'attente et de ne pas supposer que les données sont immédiatement disponibles.
+Dans certains cas, il sera nécessaire de gérer spécifiquement le temps d'attente et de ne pas supposer que les données soient immédiatement disponibles.
