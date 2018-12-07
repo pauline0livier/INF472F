@@ -9,3 +9,5 @@ Cette partie permet de pouvoir dessiner sur des surfaces ou volumes en temps ré
 ## Fiches Résumé 
 
 Cette partie reprend quelques notions importantes des séances de TP 
+ 1) Boucle d'animation 
+ 2) Rotation locale ou globale
