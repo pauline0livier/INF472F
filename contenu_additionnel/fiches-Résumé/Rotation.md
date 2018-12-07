@@ -2,7 +2,7 @@
 
 On appelle position d'un objet, la position de son centre.
 
-## Cas 1 : objet attaché à la Scène
+## Cas 1 : Objet attaché à la Scène
 rotation effectuée par défaut selon le centre de l'objet
 
 ```javascript
@@ -10,16 +10,16 @@ rotation effectuée par défaut selon le centre de l'objet
   objet.rotation.axe += 0.1;
 ```
 
-## Cas 2 : objet attaché élément statique
+## Cas 2 : Objet attaché élément statique
 
-### mauvaiseRotation
+### Mauvaise Rotation
 ```javascript
 
   objet.rotation.axe += 0.1;
 ```
 Conséquence : l'objet tourne autour du centre du parent translaté sur l'axe pour être dans le même plan que l'enfant
 
-### bonneRotation
+### Bonne Rotation
 Comme expliqué dans la séance 2, on réalise une translation pour placer l'objet au centre de son parent, on réalise la rotation puis on le replace à sa position initiale
 ```javascript
 // Translation inverse
@@ -36,9 +36,9 @@ const M_objet = new THREE.Matrix4().multiply(T).multiply(R).multiply(Tinv);
 objet.applyMatrix(M_objet);
 
 ```
-## Cas 3 : objet attaché élément dynamique
+## Cas 3 : Objet attaché élément dynamique
 
-### parent translaté
+### Parent translaté
 même approche que précédemment avec la nécessité de translation au centre du parent, faire la rotation et replacer l'objet à la position Initialise
 ```javascript
 // position objet = Vector3(0,1,1.25)
@@ -57,7 +57,7 @@ objet.applyMatrix(M_objet);
 
 ```
 
-### parent qui fait une rotation
+### Parent qui fait une rotation
 Choix du centre de rotation du parent à une extrémité E, translation du parent en -E, rotation du parent, et translation inverse en E
 
 ```javascript
