@@ -59,7 +59,7 @@ Un dépôt global est créé puis chaque sous-parties peuvent être réparties e
 git --version pour vérifier si une version est déjà installée
 
 ### Linux
-sudo apt-get update Sudo apt-get install git
+sudo apt-get update sudo apt-get install git
 
 sudo dnf install git Sudo yum install git
 
