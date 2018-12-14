@@ -51,7 +51,9 @@ Un dépôt global est créé puis chaque sous-parties peuvent être réparties e
 
 * git commit -a -m "message pour spécifier ce qui a été modifié"
 * git pull après le git commit pour avoir une fusion automatique et non manuelle
-* git push pour envoyer ses changements (Attention à ce que le code s'exécute correctement avant de push son travail)
+* git push pour envoyer ses changements 
+
+(Attention à ce que le code s'exécute correctement avant de push son travail)
 
 
 ## Installation de git
