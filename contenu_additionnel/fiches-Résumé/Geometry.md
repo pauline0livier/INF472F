@@ -64,6 +64,7 @@ const offset = 5 * 3 // index * itemSize
 bufferGeometry.attributes.position.array[offset] += 1; 
 bufferGeometry.attributes.position.array[offset+1] += 2; 
 bufferGeometry.attributes.position.array[offset+2] += 3; 
+bufferGeometry.attributes.position.needsUpdate = true;
 ```
 
 ou 
@@ -79,6 +80,7 @@ attribute.setXYZ(
   attribute.getY(index) + v3add.y,
   attribute.getZ(index) + v3add.z
 )
+bufferGeometry.attributes.position.needsUpdate = true;
 ```
 
 
