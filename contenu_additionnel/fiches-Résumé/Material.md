@@ -5,7 +5,9 @@ Un objet 3D est décrit par une geométrie (vertices, faces, normales..etc) et u
 
 ### Color 
 
--> initialisation : {color:0x......}  ou 
+Initialisation : 
+
+{color:0x......}  ou 
 
 ```javascript
 function MaterialRGB(r,g,b) {
@@ -14,7 +16,7 @@ function MaterialRGB(r,g,b) {
 }
 ```
 
--> changement en cours
+Changement en cours :
 
  material.color.set(c); // c en hexa ou string
 
@@ -24,11 +26,12 @@ function MaterialRGB(r,g,b) {
 
 
 ### Transparent && opacity 
-
--> initialisation : {transparent: true, opacity:0.5} 
 opacity entre 0 (invisible) et 1 (opaque) 
 
--> changement en cours 
+Initialisation : 
+{transparent: true, opacity:0.5} 
+
+Changement en cours :
 
 material.opacity = newValue; 
 
@@ -36,9 +39,11 @@ material.opacity = newValue;
 
 défini le côté des faces à rendre (front, back ou les deux), défaut sur THREE.FrontSide
 
--> initialisation : {side: THREE.DoubleSide}
+Initialisation : 
 
--> changement en cours 
+{side: THREE.DoubleSide}
+
+Changement en cours :
 
 material.side = THREE.BackSide
 
@@ -46,9 +51,11 @@ material.side = THREE.BackSide
 
 rendre l'objet visible ou non, défaut sur true
 
--> initialisation : {visible: false}
+Initialisation : 
 
--> changement en cours 
+{visible: false}
+
+Changement en cours :
 
 material.visible = true; 
 
