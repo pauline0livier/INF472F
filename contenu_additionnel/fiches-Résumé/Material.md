@@ -8,7 +8,7 @@ Un objet 3D est décrit par une geométrie (vertices, faces, normales..etc) et u
 Initialisation : 
 
 ```javascript
-{color:0x......} 
+{color:c} // c en hexa ou string ou r,g,b
 ```
 
 ou 
