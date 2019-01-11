@@ -26,7 +26,7 @@ const geometry = new THREE.Geometry().fromBufferGeometry( bufferGeometry );
 
 ### Modification d'un vertex à l'indice 5
 
-geometry.vertices[5] est un THREE.Vector3 dont on peut utiliser les méthodes de la classe THREE.Vector3
+geometry.vertices[5] est un THREE.Vector3 dont on peut directement utiliser les méthodes de la classe THREE.Vector3
 
 ```javascript
 geometry.vertices[5].add(new THREE.Vector3(1,2,3)); 
