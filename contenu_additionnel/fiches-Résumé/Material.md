@@ -51,7 +51,7 @@ Changement en cours :
 material.opacity = newValue; 
 ```
 
-### Side && ShadowSide
+### Side
 
 défini le côté des faces à rendre (front, back ou les deux), défaut sur THREE.FrontSide
 
