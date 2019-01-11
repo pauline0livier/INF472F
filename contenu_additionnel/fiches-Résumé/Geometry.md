@@ -15,7 +15,7 @@ donc possibilité d'utiliser les spécificités de ces classes
 
 ```javascript
 verticesArray = Array[v0,v1,v2, v3]; 
-verticesArray.length = 3;  
+console.log(verticesArray.length); //3  
 ```
 
 - Conversion BufferGeometry -> Geometry 
@@ -48,7 +48,7 @@ ex: itemSize = 2 pour des THREE.Vector2, itemSize = 3 pour des THREE.Vector3
 
 ```javascript
 verticesArray = Float32Array[v0.x, v0.y, v0.z, v1.x, v1.y, v1.z, v2.x, v2.y, v2.z, v3.x, v3.y, v3.z]; 
-verticesArray.length = 12 // itemSize*nbVertices = 3*4;; 
+console.log(verticesArray.length); // 12 (itemSize*nbVertices = 3*4); 
 ``` 
 
 - Conversion Geometry -> BufferGeometry
