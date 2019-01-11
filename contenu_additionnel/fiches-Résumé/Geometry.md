@@ -40,7 +40,7 @@ geometry.verticesNeedUpdate();
 - Réduit le coût d'envoi des données 
 
 - Données stockées comme des vecteurs de tailles définies par itemSize
-ex: itemSize = 2 pour des THREE.Vector2, itemSize = 3 pour des THREE.Vector3 
+(ex: itemSize = 2 pour des THREE.Vector2, itemSize = 3 pour des THREE.Vector3)
 
 - Utiliser pour certaines transformations (spline, extrusion..) 
 
