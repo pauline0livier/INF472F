@@ -1,7 +1,7 @@
 # Encodage des couleurs
 
 ### Les couleurs en THREE.js 
-Pour initialiser ou changer la couleur d'un objet crée avec Three.js, il est préférable utiliser la classe Color [lien vers la doc](https://threejs.org/docs/#api/en/math/Color) qui permet d'utiliser différentes formes d'entrée : rgb, hexa..etc 
+Pour initialiser ou changer la couleur d'un objet crée avec Three.js, il est préférable utiliser la classe Color (https://threejs.org/docs/#api/en/math/Color) qui permet d'utiliser différentes formes d'entrée : rgb, hexa..etc 
 
 ### Système RGB
 
