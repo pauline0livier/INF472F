@@ -1,6 +1,6 @@
 # Programmation web et Three.js
 
-Lors des séances pratiques de ce modal, vous allez développer un modeleur 3D s'exécutant sur un navigateur web.
+Lors des séances pratiques de ce modal, vous allez développer un modeleur 3D s'exécutant sur un navigateur web (en local).
 
 ## Langages web sur un navigateur
 
@@ -29,4 +29,6 @@ __[Three.js](https://threejs.org/)__ est une bibliothèque JavaScript permettant
 * Gestion d'un graphe de scène, c'est à dire que chaque objet de la scène est défini de manière hiérarchique dans un arbre. Cela permet de définir aisément le placement relatif d'un objet parent et de ses enfants.
 * Gestion du picking par "lancer de rayons" (sélection d'une partie d'un objet 3D à partir de la position de la souris).
 
-Votre code consistera à développer un modeleur 3D expressif - c'est à dire adapté et facilitant la création du type d'objet que vous souhaitez - en JavaScript, en utilisant la bibliothèque Three.js (elle-même utilisant WebGL de manière sous-jacente pour le rendu 3D).
+## Objectif du modal 
+Votre projet consistera à développer un modeleur 3D expressif - c'est à dire adapté et facilitant la création d'un type d'objet imaginé - en JavaScript, en utilisant la bibliothèque Three.js (elle-même utilisant WebGL de manière sous-jacente pour le rendu 3D).
+
