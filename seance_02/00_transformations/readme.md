@@ -237,3 +237,7 @@ cylinderSon.applyMatrix(M_red);
 ```
 
 [Voir résultat correspondant.](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_02/00_transformations/d_matrices/index.html)
+
+### En cas de problèmes sur les rotations 
+Voir la partie fiches-Résumé et les exemples associés sur les rotations 
+(https://github.com/pauline0livier/INF472F/tree/master/contenu_additionnel/fiches-R%C3%A9sum%C3%A9)
