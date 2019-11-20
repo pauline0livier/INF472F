@@ -8,9 +8,11 @@ Elle propose également une interface disposant des trois options suivantes
 
 
 __Q.__ Observez la mise en place du picking pour la création des cubes dans le code.
+
 __Q.__ Créez une scène arbitraire et cliquez sur 'Save'.
 
 Notez les points suivants
+* Il peut y avoir des problèmes pour la sauvegarde sous Firefox (problème de sécurité similaire à ceux des textures) 
 * Pour les mêmes raisons de sécurités vues lors du chargement de texture à partir d'un fichier, JavaScript ne peut pas écrire directement sur votre disque dur. Sauvegarder un fichier passe ici par la demande de téléchargement d'un fichier, ici réalisé par la fonction _download_. Cette fonction vient créer un objet HTML de type 'lien' sur lequel il clique.
 * Le format de sauvegarde [JSON](https://www.json.org/) (JavaScript Object Notation) est un format de description de données sous forme de (pair,valeur). Ce format aisément lisible et modifiable en tant que texte est particulièrement adapté à l'encodage des structures JavaScript qui peuvent nativement s'exporter et s'importer depuis du JSON.
 
