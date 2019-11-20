@@ -1,5 +1,8 @@
 # Encodage des couleurs
 
+### Les couleurs en THREE.js 
+Pour initialiser ou changer la couleur d'un objet crée avec Three.js, il est préférable utiliser la classe Color [lien vers la doc](https://threejs.org/docs/#api/en/math/Color) qui permet d'utiliser différentes formes d'entrée : rgb, hexa..etc 
+
 ### Système RGB
 
 Une approche courante adaptée à la représentation d'une couleur sur un écran consiste à définir celle-ci sur trois canaux: Rouge, Vert, Bleu. On parle de composantes RVB en français, ou RGB en anglais.
@@ -53,3 +56,5 @@ Quelques couleurs classiques:
  * CMYK (cyan, magenta, yellow, black), utilisé en imprimerie et associée à une synthèse soustractive.
  * LAB permettant de s'approcher de la représentation perceptuelle des couleurs, utilisé dans le cas de rendus de couleurs à haute fidélité.
  * Spectre de fréquences, utilisé pour de la mesure physique ou en simulation numérique.
+ 
+ 
