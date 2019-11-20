@@ -27,3 +27,10 @@ _Aide:_ on pourra réaliser le déplacement de la sphère par translation. Pour 
 __Question additionnelle__ Utiliser maintenant les flèches du clavier pour gérer la translation de la sphère 
 
 Indication : Identifiez les keycodes associé aux flèches du clavier 
+
+## Pour aller plus loin pendant les séances de TP ou aide pour le projet 
+Les évènements clavier/souris peuvent permettre d'interagir avec la Scène de différentes manières : déplacer des objets, s'orienter dans l'espace
+
+Vous pouvez également les utiliser pour dessiner dans la Scène : 
+https://github.com/pauline0livier/INF472F/tree/master/contenu_additionnel/dessin
+
