@@ -4,7 +4,7 @@
 
 Ce programme présente l'application de textures sur une surface. À titre d'information, l'application d'une texture sur un maillage nécessite deux paramètres:
 1. Une image qui va être appliquée sur la surface.
-1. Des coordonnées de textures (généralement appelées (u,v), ou (s,t)) associées à chaque sommet du maillage, et qui viennent donner la correspondance entre un sommet donné du maillage, et sa position 2D dans l'espace de l'image.
+2. Des coordonnées de textures (généralement appelées (u,v), ou (s,t)) associées à chaque sommet du maillage, et qui viennent donner la correspondance entre un sommet donné du maillage, et sa position 2D dans l'espace de l'image.
 
 Les coordonnées de textures sont généralement calculées automatiquement lors de la création de primitives par Three.js, mais peuvent être adaptées au besoin.
 
@@ -12,13 +12,17 @@ Dans le cas du code suivant, on utilise les coordonnées de textures fournies pa
 Nous devons cependant charger les images qui sont placées dans le répertoire _pictures/_
 Three.js propose un chargeur d'image par le biais d'un objet  [TextureLoader](https://threejs.org/docs/#api/loaders/TextureLoader).
 
-__Q.__ Lancez votre navigateur sur le fichier index.html, notez que les objets de la scène apparaissent totalement noirs (c'est normal). Observez les lignes d'erreurs en mode console.
+__Q.__ Lancez votre navigateur sur le fichier index.html
+
+2 cas sont possibles : 
+1. (Firefox) les objets de la scène apparaissent avec la texture choisie 
+
+2. (Chrome) les objets de la scène semblent totalement noirs et les lignes suivantes sont apparues dans la console 
 Typiquement:
 ```
 Acces to Image at 'file:///...' has been blocked by CORS policy.
 ```
-
-Cela signifie que votre navigateur n'a pas réussi à lire l'image depuis le disque dur.
+Cela signifie que votre navigateur n'a pas réussi à lire l'image depuis le disque dur et qu'il faut ouvrir un serveur local pour créer un "pont" entre le navigateur et votre disque dur. 
 
 ## Chargement d'un fichier externe
 
