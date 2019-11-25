@@ -30,9 +30,9 @@ Une couleur complète est définie entièrement par trois composantes, et donc 3
 Les trois composantes RGB sont concaténées sur une seule valeur, généralement dans l'ordre rouge, puis vert, puis bleu (0xRRVVBB, où RR, VV, et BB sont les symboles hexadécimaux de chaque composante).
 
 Exemple: 0xffab00 est interprété comme ayant les composantes:
-* rouge: 0xff=255
-* vert: 0xab=171
-* bleu: 0x00=0.
+* rouge: 0xff....=255
+* vert: 0x..ab..=171
+* bleu: 0x....00 = 0.
 Soit au final une couleur légèrement orangée.
 
 Quelques couleurs classiques:
