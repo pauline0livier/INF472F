@@ -14,7 +14,7 @@ __Q.__ Observez les trois fichiers sources et assurez vous que vous puissiez vis
 
 ![Résultat visuel](pictures/resultat.png)
 
-[_Scène 3D visualisée dans le navigateur_](https://htmlpreview.github.io/?https://github.com/drohmer/INF473F/blob/master/seance_01/partie_02_scene_3D/src/index.html)
+[_Scène 3D visualisée dans le navigateur_](https://htmlpreview.github.io/?https://github.com/pauline0livier/INF472F/blob/master/seance_01/partie_02_scene_3D/a_exemple_simple/src/index.html)
 
 ### Compréhension du fonctionnement du code JavaScript
 
