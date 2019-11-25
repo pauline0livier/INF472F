@@ -60,7 +60,7 @@ notez que le cube n'apparait plus <br/>
 __Q.__ Ajoutez un nouveau cube vert à côté du premier cube rouge déjà présent.
 
 Notez que les objets graphiques affichés par Three.js sont généralement des maillages triangulaires (mesh en anglais). Three.js considère un "[THREE.Mesh](https://threejs.org/docs/#api/objects/Mesh)" comme une structure contenant deux éléments:
-  1. Une forme ([geometry](https://threejs.org/docs/#api/core/Geometry)), ici une primitive cubique stockée en interne sous la forme d'une liste de sommets (vertices) et d'une liste de faces reliants chacun 3 sommets.
+  1. Une forme ([geometry](https://threejs.org/docs/#api/core/Geometry)), ici une primitive cubique stockée en interne sous la forme d'une liste de sommets (vertices) et d'une liste de faces, chaque face relie 3 sommets entre eux.
   1. Une apparence ([material](https://threejs.org/docs/#api/materials/Material)). Dans notre cas, il s'agira généralement de la couleur de l'objet. Plus généralement les "matériaux" peuvent aussi contenir des textures et avoir une apparence variable en fonction de la position de la lumière et de la caméra pour donner l'impression d'être brillant, mat, réfléchissants, etc.
 
 __Question Additionnelle.__ Réaliser une pyramide/pile de cubes.
