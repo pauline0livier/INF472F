@@ -75,8 +75,6 @@ function initEmptyScene(sceneThreeJs, affichageElement) {
   sceneInit.insertRenderInHtml(sceneThreeJs.renderer.domElement);
 
   sceneThreeJs.controls = new THREE.OrbitControls( sceneThreeJs.camera,sceneThreeJs.renderer.domElement );
-  sceneThreeJs.controls.addEventListener( 'change', function(event){light_update(sceneThreeJs.camera,spotLight1);},true);
-  sceneThreeJs.controls.addEventListener( 'change', function(event){light_update2(sceneThreeJs.camera,spotLight2);},true);
 
   window.addEventListener('resize', function(event){onResize(sceneThreeJs);}, true);
 }
