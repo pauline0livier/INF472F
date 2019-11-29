@@ -4,7 +4,7 @@ Voir slides du cours pour rappel
 
 Extension de THREE.js aux surfaces implicites en utilisant des *Blobs*
 
-https://github.com/dualbox/three-js-blobtree
+https://moodle.polytechnique.fr/course/view.php?id=7751
 
 Blob = surface implicite définie et controlée par des squelettes ponctuels 
 
