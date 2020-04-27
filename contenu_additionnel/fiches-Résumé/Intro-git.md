@@ -49,7 +49,8 @@ Un dépôt global est créé puis chaque sous-parties peuvent être réparties e
 
 ## Conseils pour une utilisation idéale de git
 
-* git commit -a -m "message pour spécifier ce qui a été modifié"
+* git add fichier1 fichier 2.. (les fichiers qui ont été modifiés) 
+* git commit -m "message pour spécifier ce qui a été modifié"
 * git pull après le git commit pour avoir une fusion automatique et non manuelle
 * git push pour envoyer ses changements 
 
