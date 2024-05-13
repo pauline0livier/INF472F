@@ -1,0 +1,163 @@
+"use strict";
+
+
+main();
+
+function main() {
+
+    const sceneThreeJs = {
+        sceneGraph: null,
+        camera: null,
+        renderer: null,
+        controls: null
+    };
+
+    initEmptyScene(sceneThreeJs);
+    init3DObjects(sceneThreeJs.sceneGraph);
+
+
+    animationLoop(sceneThreeJs);
+}
+
+/**
+ * initialize the objects composing the scene
+ * @param {sceneGraph} sceneGraph 
+ */
+function init3DObjects(sceneGraph) {
+
+    // the plane under the animated objects
+    const Lp = 8;
+    const planeGeometry = primitiveGeometry.getQuadrangleGeometry(
+        Vector3(-Lp, -2.0, -Lp), Vector3(-Lp, -2.0, Lp),
+        Vector3(Lp, -2.0, Lp), Vector3(Lp, -2.0, -Lp)
+    );
+
+    const plane = new THREE.Mesh( planeGeometry, MaterialRGB(0.8, 0.8, 0.8) );
+    plane.name = "plane";
+    plane.receiveShadow = true;
+    sceneGraph.add(plane);
+
+    // a 3D box 
+    const rectGeometry = new THREE.BoxGeometry(4.0, 2.0, 2.0);
+    const rectangle = new THREE.Mesh(rectGeometry, MaterialRGB(1.0, 0.0, 0.0));
+    rectangle.position.set(4.0, -1.75, 4.0);
+    rectangle.name = "rectangle";
+    rectangle.castShadow = true;
+    rectangle.receiveShadow = true;
+    sceneGraph.add(rectangle);
+
+}
+
+/**
+ * call the render of the scene
+ * @param {scene} sceneThreeJs 
+ */
+function render( sceneThreeJs ) {
+    sceneThreeJs.renderer.render(sceneThreeJs.sceneGraph, sceneThreeJs.camera);
+}
+
+/**
+ * launch the animation
+ * @param {scene} sceneThreeJs 
+ * @param {number} time 
+ */
+function animate(sceneThreeJs, time) {
+
+    const cube = sceneThreeJs.sceneGraph.getObjectByName("rectangle");
+
+    // Rotation around the center of the object attached to the scene
+    cube.rotation.y += 0.01;
+
+    render(sceneThreeJs);
+}
+
+/**
+ * initializes the 3D scene without objects 
+ * Creates a scene graph and addition of a camera and light 
+ * Creates a render engine and link it to the HTML document
+ * sets the scene control to OrbitControls
+ * @param {sceneThreeJs} sceneThreeJs 
+ */
+function initEmptyScene(sceneThreeJs) {
+
+    sceneThreeJs.sceneGraph = new THREE.Scene();
+
+    sceneThreeJs.camera = sceneInit.createCamera(-13,9,21);
+    sceneInit.insertAmbientLight(sceneThreeJs.sceneGraph);
+    sceneInit.insertLight(sceneThreeJs.sceneGraph,Vector3(-3,5,10));
+
+    const spotLight2 = new THREE.SpotLight(0xffffff,0.4);
+    spotLight2.position.copy(sceneThreeJs.camera.position);
+
+    spotLight2.castShadow = true;
+    spotLight2.shadow.mapSize.width = 2048;
+    spotLight2.shadow.mapSize.height = 2048;
+
+    sceneThreeJs.sceneGraph.add(spotLight2);
+
+    sceneThreeJs.renderer = sceneInit.createRenderer();
+    sceneInit.insertRenderInHtml(sceneThreeJs.renderer.domElement);
+
+    sceneThreeJs.controls = new THREE.OrbitControls( sceneThreeJs.camera );
+
+    window.addEventListener('resize', function(event){onResize(sceneThreeJs);} );
+}
+
+/**
+ * deals with the animation loop 
+ * @param {sceneThreeJs} sceneThreeJs 
+ */
+function animationLoop(sceneThreeJs) {
+
+    requestAnimationFrame(
+
+        // The callback function has the elapsed time as argument 
+        function(timeStamp){
+
+            // call the animate function 
+            animate(sceneThreeJs,timeStamp); 
+
+            // relaunch a new request of update
+            animationLoop(sceneThreeJs); 
+        }
+
+     );
+
+}
+
+/**
+ * called when the window is resized 
+ * @param {sceneThreeJs} sceneThreeJs 
+ */
+function onResize(sceneThreeJs) {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    sceneThreeJs.camera.aspect = width / height;
+    sceneThreeJs.camera.updateProjectionMatrix();
+
+    sceneThreeJs.renderer.setSize(width, height);
+}
+
+/**
+ * shortens THREE.Vector3 by Vector3 
+ * @param {number} x 
+ * @param {number} y 
+ * @param {number} z 
+ * @returns THREE.Vector3(x,y,z)
+ */
+function Vector3(x,y,z) {
+    return new THREE.Vector3(x,y,z);
+}
+
+/**
+ * creates a default MeshLambertMaterial with color as argument
+ * @param {number} r red
+ * @param {number} g green
+ * @param {number} b blue
+ * @returns the THREE.MeshLambertMaterial of color (r,g,b)
+ */
+function MaterialRGB(r,g,b) {
+    const c = new THREE.Color(r,g,b);
+    return new THREE.MeshLambertMaterial( {color:c} );
+}
