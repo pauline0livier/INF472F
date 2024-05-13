@@ -1,18 +1,16 @@
 # INF472F
-Modal d'Informatique - Modélisation Expressive pour la Fabrication 3D 
+Ecole Polytechnique Module - Expressing Modeling for 3D Fabrication
 
-[Lien vers la page officielle du cours](https://moodle.polytechnique.fr/course/info.php?name=INF472F-2018)
+[Link to the course page](https://moodle.polytechnique.fr/course/info.php?name=INF472F-2018)
 
-Planning des séances de TP : 
+Practice Schedule:
 
-Séance TP 1-3: séance 1, 2 et contenu additionel (dessin + Surfaces Implicites)
+Practice Sessions 1-3: Covering Part 1, Part 2, and Additional Content (including drawing and implicit surfaces).
 
-Fin Séance 3 : avoir trouver son binôme pour réfléchir au projet en vue de la séance 4 
+End of Session 3: Form groups for your project.
 
-Séance 4 : présentation du concept du projet et raffinement 
+Session 4: Develop and refine your project's concept.
 
-Séance 5-9 : Mise en place du projet 
-
-Séance 10 : Soutenance + Etude utilisateur 
+Sessions 5-9: Work on the Project.
 
 
