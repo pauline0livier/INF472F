@@ -1,43 +1,43 @@
-# Partie dessin
+# Drawing part
 
-* le dossier Exemple vous permet un aperçu du mode dessin
-* les fichiers utilsDrawing.js et mouseEvents.js vous permettent de récupérer la fonctionnalité dessin
+* the Example folder lets you preview the drawing mode
+* the utilsDrawing.js and mouseEvents.js files allow you to retrieve the drawing functionality.
 
-Dessiner sur des surfaces ou volumes peut être utile afin de créer une forme unique.
-Dans cette partie, la librairie ___OrbitControls.js___ a été modifié afin de destiner le clic gauche de la souris au dessin et le clic droit au déplacement de la caméra.
+Drawing on surfaces or volumes can be useful for creating a unique shape.
+In this section, the ___OrbitControls.js___ library has been modified to use the left mouse click for drawing and the right mouse click for moving the camera.
 
-## Principe
+## Principle
 
-### Rappel séance 2 partie - Lancer de rayons
-Une approche de lancer de rayons permet de déterminer l’intersection d’un objet avec un rayon. A chaque coordonnée (x,y) sélectionnée sur l’écran, le lanceur de rayons crée un rayon qui a pour origine la position de la caméra et pour direction le rayon qui passe par la caméra et qui se projette en (x,y) sur le plan image de l’écran. Ainsi, l’utilisateur a l’impression de dessiner directement sur le premier objet sur lequel se projette le rayon.
+### Reminder part 2 - Raycasting subpart 
+A ray-tracing approach is used to determine the intersection of an object with a ray. For each (x,y) coordinate selected on the screen, the ray-caster creates a ray whose origin is the camera position and whose direction is the ray passing through the camera and projected at (x,y) onto the screen image plane. In this way, the user has the impression of drawing directly on the first object on which the ray is projected.
 
-### Algorithme
+### Algorithm
 
-On appelle polyligne, une ligne continue composée d’un ou plusieurs segments.
+A polyline is a continuous line made up of one or more segments.
 
-Initialisation : polyLigne = null;
+Initialization: polyLine = null;
 
-Du début à la fin du geste de tracé de l’utilisateur,
+From the beginning to the end of the user's drawing gesture,
 
-   * (xSouris, ySouris) = coordonnées de la souris sur l'écran
+   * (xMouse, yMouse) = mouse coordinates on screen
    
-   * Création d'un rayon qui passe par la caméra et se projette en (xSouris, ySouris) sur le plan image de l'écran 
+   * Create a ray that passes through the camera and is projected at (xMouse, yMouse) onto the screen image plane. 
    
-   * Utilisation de ce rayon pour déterminer le point Pi (x,y,z), intersection du rayon et du premier objet intersecté 
+   * Use this ray to determine the point Pi(x,y,z): the intersection of the ray and the first intersected object. 
    
-   * Ajout de Pi dans la polyligne + affichage mise à jour de la polyligne
+   * Add Pi to the polyline + display updated polyline
 
 
-De fait, le tracé de l’utilisateur n’est pas modifié par le système.
+To note: the user's line is not modified by the system.
 
 
-### Informations complémentaires
+### Complementary information
 
-* Modifier l'épaisseur de la ligne
-Ajout de l'attribut "linewidth:valeur" à l'apparence de la polyligne
+* Modify line thickness
+Add "linewidth:value" attribute to polyline appearance
 
-### Explications des différents éléments de l'ensemble drawingData
-* drawingObjects : liste contenant tous les éléments servant de support au dessin 
-* selectedObject : support sélectionné pour le dessin 
-* line : ligne créée par le dessin 
-* drawing3DPoints : liste contenant les coordonnées des points 3D récupérés lors du lancer de rayon
+### Explanations of the various elements of the drawingData dictionary
+* drawingObjects: list containing all elements used as drawing supports 
+* selectedObject: current support selected for drawing 
+* line: line created by the drawing 
+* drawing3DPoints: list containing the coordinates of 3D points retrieved during ray casting
